@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Inner Page - Squadfree Bootstrap Template</title>
+    <title>El Gouna Padel - Booking</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -50,10 +50,10 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <h1 class="text-light">
-            <a href="index.html"><span>Gouna Padel</span></a>
-          </h1>
+        <div>
+          <a href="index.html"
+            ><img class="logo-image" src="./assets/img/padel-logo.png"
+          /></a>
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="index.html"
             ><img src="assets/img/logo.png" alt="" class="img-fluid"
@@ -61,40 +61,6 @@
         </div>
 
         <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto" href="/#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="/#about">About Us</a></li>
-            <li><a class="nav-link scrollto" href="/#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto" href="/#portfolio">Portfolio</a>
-            </li>
-            <li><a class="nav-link scrollto" href="/#team">Team</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
-          </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
@@ -106,14 +72,24 @@
       <!-- ======= Breadcrumbs Section ======= -->
       <section class="breadcrumbs">
         <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="padding-top: 20px"
+          >
             <h2>Book Now</h2>
           </div>
         </div>
       </section>
       <!-- End Breadcrumbs Section -->
 
-      <section class="inner-page">
+      <div
+        style="
+          overflow: hidden;
+          padding-top: 100%;
+          padding-bottom: 30%;
+          position: relative;
+        "
+      >
         <iframe
           src="https://outlook.office365.com/owa/calendar/Test123@orascomdh.onmicrosoft.com/bookings/"
           width="100%"
@@ -126,14 +102,69 @@
             overflow-y: hidden;
             height: 100%;
             width: 100%;
-            position: fixed;
-            top: 150px;
+            position: absolute;
+            top: 0px;
             left: 0px;
             right: 0px;
             bottom: 0px;
           "
         ></iframe>
+      </div>
+
+      <!-- ======= Pay Now ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Confirm your booking with payment</h3>
+
+            <a
+              class="cta-btn"
+              href="https://accept.paymobsolutions.com/standalone?ref=p_ek0"
+              >Pay Now</a
+            >
+          </div>
+        </div>
       </section>
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>GOUNA PADEL</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <!-- <div
+        style="
+          overflow: hidden;
+          padding-top: 60%;
+          padding-bottom: 0%;
+          position: relative;
+        "
+      >
+        <iframe
+          src="https://accept.paymob.com/api/acceptance/iframes/249719?payment_token=ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6VXhNaUo5LmV5SmlhV3hzYVc1blgyUmhkR0VpT25zaVptbHljM1JmYm1GdFpTSTZJa05zYVdabWIzSmtJaXdpYkdGemRGOXVZVzFsSWpvaVRtbGpiMnhoY3lJc0luTjBjbVZsZENJNklrVjBhR0Z1SUV4aGJtUWlMQ0ppZFdsc1pHbHVaeUk2SWpnd01qZ2lMQ0ptYkc5dmNpSTZJalF5SWl3aVlYQmhjblJ0Wlc1MElqb2lPREF6SWl3aVkybDBlU0k2SWtwaGMydHZiSE5yYVdKMWNtZG9JaXdpYzNSaGRHVWlPaUpWZEdGb0lpd2lZMjkxYm5SeWVTSTZJa05TSWl3aVpXMWhhV3dpT2lKamJHRjFaR1YwZEdVd09VQmxlR0V1WTI5dElpd2ljR2h2Ym1WZmJuVnRZbVZ5SWpvaUt6ZzJLRGdwT1RFek5USXhNRFE0TnlJc0luQnZjM1JoYkY5amIyUmxJam9pTURFNE9UZ2lMQ0psZUhSeVlWOWtaWE5qY21sd2RHbHZiaUk2SWs1QkluMHNJbkJ0YTE5cGNDSTZJall5TGpJME1TNHhNemN1TWpBeklpd2lhVzUwWldkeVlYUnBiMjVmYVdRaU9qTTNNREF4TXl3aVlXMXZkVzUwWDJObGJuUnpJam96TURBd01Dd2laWGh3SWpveE5qSTJNRGd4TnpNMExDSjFjMlZ5WDJsa0lqb3hPREl4TXpRc0lteHZZMnRmYjNKa1pYSmZkMmhsYmw5d1lXbGtJanBtWVd4elpTd2lZM1Z5Y21WdVkza2lPaUpGUjFBaUxDSnZjbVJsY2w5cFpDSTZNVE0zTURNNU5EVjkuSS1FeGhoV005dXFyZjg4QkwwYjJ5b0lkQTNhenhTdjF4LXBXUDN3SERoS25qSGQ1ZVFmSXFDZWtDWnVsbUZrVzE0d3ZoTXBHT3UzSkpiRjZOR3Bjdmc="
+          width="100%"
+          height="100%"
+          scrolling="yes"
+          frameborder="0"
+          style="
+            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+          "
+        ></iframe>
+      </div> -->
     </main>
     <!-- End #main -->
 
